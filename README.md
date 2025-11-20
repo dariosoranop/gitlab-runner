@@ -38,3 +38,9 @@ sudo apt install gitlab-runner
 curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.rpm.sh | sudo bash
 sudo yum install gitlab-runner
 ```
+## 📌 3. Import della CA Mediocredito
+
+### Copiare il file della CA in:
+```bash
+/usr/local/share/ca-certificates/mcc-ca.crt
+```
