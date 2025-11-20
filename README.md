@@ -100,5 +100,5 @@ sudo gitlab-runner register
    Tags → ad esempio:
      frontend, sast, dast
      backend, sast, ds
-Consigliato:
+### Consigliato:
 Ogni progetto dovrebbe avere almeno un runner dedicato, ottimizzato per SAST/DAST.
