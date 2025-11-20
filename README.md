@@ -84,3 +84,21 @@ Al termine:
 ```bash
 sudo systemctl restart gitlab-runner
 ```
+##  Registrazione Project Runner (UI)
+Per ogni progetto:
+1. Apri il progetto su GitLab EE:
+```bash
+   Project → Settings → CI/CD → Runners
+```
+2. Sezione "Set up a runner manually"
+3. Copia il comando di registrazione e lancia:
+```bash
+sudo gitlab-runner register
+```
+4. Imposta:
+   Runner non shared
+   Tags → ad esempio:
+     frontend, sast, dast
+     backend, sast, ds
+Consigliato:
+Ogni progetto dovrebbe avere almeno un runner dedicato, ottimizzato per SAST/DAST.
