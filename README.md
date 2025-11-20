@@ -74,12 +74,13 @@ Admin → CI/CD → Runners → New runner
    sudo gitlab-runner register
 ```
 5. Quando richiesto:
-   URL GitLab EE → https://<gitlab-ee>
-   Token → fornito dalla UI
-   Description → shared-runner
-   Tags → shared, security
-   Executor → docker
-   Docker image → alpine:latest
+   - URL GitLab EE → https://<gitlab-ee>
+   - Token → fornito dalla UI
+   - Description → shared-runner
+   - Tags → shared, security
+   - Executor → docker
+   - Docker image → alpine:latest
+
 Al termine:
 ```bash
 sudo systemctl restart gitlab-runner
