@@ -32,3 +32,9 @@ Il runner deve semplicemente *fidarsi* della CA che firma il certificato del Git
 ```bash
 curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh | sudo bash
 sudo apt install gitlab-runner
+```
+### Per RHEL / Rocky / AlmaLinux
+```bash
+curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.rpm.sh | sudo bash
+sudo yum install gitlab-runner
+```
