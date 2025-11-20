@@ -102,3 +102,14 @@ sudo gitlab-runner register
      backend, sast, ds
 ### Consigliato:
 Ogni progetto dovrebbe avere almeno un runner dedicato, ottimizzato per SAST/DAST.
+
+## 📌 Verifica del Runner
+```bash
+sudo gitlab-runner verify
+sudo gitlab-runner list
+```
+## Nella UI dovresti vedere:
+   Runner active
+   green heartbeat
+   Last contact < 1 min
+
