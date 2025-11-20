@@ -113,3 +113,38 @@ sudo gitlab-runner list
    green heartbeat
    Last contact < 1 min
 
+### configurazione runner config.toml
+```bash
+check_interval = 0
+connection_max_age = "15m0s"
+shutdown_timeout = 0
+
+[session_server]
+  session_timeout = 1800
+
+[[runners]]
+  name = "runner-pull-mirror"
+  url = "https://gitlab-ultimate.mcc.it"
+  id = 1
+  token = "glrt-Lu-fYX-vEBxzyfqwcbqrE286MQp0OjEKdToxCw.01.121eyku3p"
+  executor = "docker"
+
+  [runners.cache]
+    MaxUploadedArchiveSize = 0
+
+  [runners.docker]
+    tls_verify = false
+    image = "alpine:latest"
+    privileged = false
+    disable_entrypoint_overwrite = false
+    oom_kill_disable = false
+    disable_cache = false
+
+    volumes = [
+      "/etc/gitlab-runner/certs:/etc/gitlab-runner/certs:ro",
+      "/var/run/docker.sock:/var/run/docker.sock",
+      "/cache"
+    ]
+
+    shm_size = 0
+```
