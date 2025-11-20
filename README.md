@@ -12,8 +12,8 @@ Questa guida descrive come installare, configurare e registrare GitLab Runner su
 - RAM: 4+ GB  
 - Storage: 20+ GB  
 - Accesso HTTPS verso:
-  - GitLab CE del cliente
-  - GitLab EE audit (Kiratech)
+  - GitLab CE 
+  - GitLab EE audit
 
 ### Certificati
 - **È necessario importare la CA del GitLab CE** per permettere al runner di validare TLS.
