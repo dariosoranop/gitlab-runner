@@ -97,9 +97,9 @@ sudo gitlab-runner register
 ```
 4. Imposta:
    Runner non shared
-   Tags → ad esempio:
-     frontend, sast, dast
-     backend, sast, ds
+   - Tags → ad esempio:
+     - frontend, sast, dast
+     - backend, sast, ds
 ### Consigliato:
 Ogni progetto dovrebbe avere almeno un runner dedicato, ottimizzato per SAST/DAST.
 
@@ -109,11 +109,11 @@ sudo gitlab-runner verify
 sudo gitlab-runner list
 ```
 ## Nella UI dovresti vedere:
-   Runner active
-   green heartbeat
-   Last contact < 1 min
+   - Runner active
+   - green heartbeat
+   - Last contact < 1 min
 
-### configurazione runner config.toml
+## Configurazione runner config.toml
 ```bash
 check_interval = 0
 connection_max_age = "15m0s"
