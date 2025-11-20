@@ -44,3 +44,19 @@ sudo yum install gitlab-runner
 ```bash
 /usr/local/share/ca-certificates/mcc-ca.crt
 ```
+### Aggiornare il sistema:
+```bash
+sudo update-ca-certificates
+```
+
+## Import CA anche in Docker (obbligatorio)
+### Creare la cartella:
+```bash
+sudo mkdir -p /etc/gitlab-runner/certs
+sudo cp mcc-ca.crt /etc/gitlab-runner/certs/
+```
+### Impostare i permessi:
+```bash
+sudo chown gitlab-runner:gitlab-runner /etc/gitlab-runner/certs/*
+```
+
