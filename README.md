@@ -150,8 +150,8 @@ shutdown_timeout = 0
     shm_size = 0
 ```
 ### Riferimenti ufficiali
-https://docs.gitlab.com/runner/install/
-https://docs.gitlab.com/runner/configuration/advanced-configuration/
-https://docs.gitlab.com/runner/configuration/tls-self-signed/
-https://docs.gitlab.com/ci/runners/configure_runners/#registering-a-project-runner
-https://docs.gitlab.com/ci/runners/configure_runners/#registering-a-shared-runner
+- https://docs.gitlab.com/runner/install/
+- https://docs.gitlab.com/runner/configuration/advanced-configuration/
+- https://docs.gitlab.com/runner/configuration/tls-self-signed/
+- https://docs.gitlab.com/ci/runners/configure_runners/#registering-a-project-runner
+- https://docs.gitlab.com/ci/runners/configure_runners/#registering-a-shared-runner
