@@ -4,7 +4,7 @@ Questa guida descrive come installare, configurare e registrare GitLab Runner su
 
 ---
 
-## 📌 1. Requisiti
+## 1. Requisiti
 
 ### Server dedicato per GitLab Runner
 - OS consigliato: **Ubuntu 22.04 / Debian 12 / RHEL 8 / Rocky 8 / AlmaLinux 8**
@@ -26,7 +26,7 @@ Il runner deve semplicemente *fidarsi* della CA che firma il certificato del Git
 
 ---
 
-## 📌 2. Installazione di GitLab Runner
+##  2. Installazione di GitLab Runner
 
 ### Per Debian/Ubuntu
 ```bash
@@ -38,7 +38,7 @@ sudo apt install gitlab-runner
 curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.rpm.sh | sudo bash
 sudo yum install gitlab-runner
 ```
-## 📌 3. Import della CA Mediocredito
+##  3. Import della CA Mediocredito
 
 ### Copiare il file della CA in:
 ```bash
@@ -59,7 +59,7 @@ sudo cp mcc-ca.crt /etc/gitlab-runner/certs/
 ```bash
 sudo chown gitlab-runner:gitlab-runner /etc/gitlab-runner/certs/*
 ```
-## 📌 4. Registrazione dello Shared Runner (UI)
+##  4. Registrazione dello Shared Runner (UI)
 1. Accedere al GitLab EE Audit
 2. Vai su:
 ```bash
@@ -104,7 +104,7 @@ sudo gitlab-runner register
 ### Consigliato:
 Ogni progetto dovrebbe avere almeno un runner dedicato, ottimizzato per SAST/DAST.
 
-## 📌 Verifica del Runner
+##  Verifica del Runner
 ```bash
 sudo gitlab-runner verify
 sudo gitlab-runner list
